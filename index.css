@@ -1,0 +1,72 @@
+/* * {
+  background-color: red;
+
+} */
+body {
+  background-color: yellowgreen;
+}
+/* Tag selector */
+h2 {
+  color: blue;
+}
+h1 {
+  color: red;
+  background-color: yellow;
+  width: 50%;
+  height: 300px;
+}
+/* p {
+  color: yellow;
+} */
+/* Id Selector */
+#para {
+  color: green;
+  background-color: yellow;
+  /* top right bottom left */
+  padding: 50px 20px 100px 150px;
+  /* giving two value top-bottom , left-right */
+  margin-left: 10px;
+
+  margin: 70px 150px;
+}
+
+/* Class selector */
+.common {
+  color: yellow;
+  background-color: red;
+  border: 10px solid blue;
+  border-width: 10px;
+  border-color: grey;
+  border-style: dotted;
+}
+
+/* type selector/attribute */
+/* attribute,value */
+button[type="submit"] {
+  color: red;
+}
+
+/* pseudo class */
+/* li:nth-child(2) {
+  color: orange;
+} */
+li:first-child {
+  color: red;
+}
+
+/* pseudo elements */
+li:first-child::before {
+  content: "hi ";
+}
+
+li::first-letter {
+  color: green;
+}
+#block {
+  border: 1px solid black;
+  display: inline;
+}
+.inline {
+  border: 1px solid black;
+  display: block;
+}
