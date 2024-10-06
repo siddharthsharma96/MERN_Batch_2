@@ -1,0 +1,38 @@
+.Container {
+  height: 80vh;
+  width: 50%;
+  border: 2px solid black;
+}
+
+.sticky {
+  background-color: yellow;
+  position: sticky;
+  top: 30px;
+}
+
+.Container:nth-child(2) {
+  padding: 20px;
+  background-color: green;
+}
+
+.Container:nth-child(3) {
+  /* padding: 20px; */
+  position: relative;
+  background-color: red;
+}
+
+.absolute {
+  position: absolute;
+  background-color: white;
+  top: -20px;
+  right: 0px;
+}
+
+.fixed {
+  position: fixed;
+  background-color: red;
+  color: white;
+  font-weight: 700;
+  top: 30px;
+  right: 70px;
+}

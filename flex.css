@@ -1,0 +1,20 @@
+.flexContainer {
+  display: flex;
+  /* flex-direction: column; */
+
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.flexItems {
+  background-color: red;
+  color: yellow;
+  font-weight: 700;
+  height: 400px;
+  width: 23%;
+  flex-basis: 25%;
+}
+
+.flexItems:nth-child(5) {
+  /* order: 1; */
+}
