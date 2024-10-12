@@ -1,7 +1,5 @@
 .flexContainer {
   display: flex;
-  /* flex-direction: column; */
-
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -12,9 +10,21 @@
   font-weight: 700;
   height: 400px;
   width: 23%;
-  flex-basis: 25%;
+  font-size: 60px;
 }
 
-.flexItems:nth-child(5) {
+.flexItems:nth-child(2) {
   /* order: 1; */
+  display: none;
+}
+
+@media (max-width: 768px) and (min-width: 576px) {
+  .flexItems {
+    width: 40%;
+    font-size: 320px;
+  }
+  .flexItems:nth-child(2) {
+    order: -1;
+    display: block;
+  }
 }

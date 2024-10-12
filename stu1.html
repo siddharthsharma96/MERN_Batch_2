@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Dashboard</title>
+    <style>
+      /* Basic reset and font styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      /* Header style */
+      .header {
+        background-color: #4caf50;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        flex-shrink: 0;
+      }
+
+      /* Main container that uses flexbox */
+      .container {
+        display: flex;
+        flex-grow: 1;
+      }
+
+      /* Sidebar styles */
+      .sidebar {
+        background-color: #333;
+        color: white;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        flex-shrink: 0;
+      }
+
+      .sidebar a {
+        color: white;
+        text-decoration: none;
+        margin: 10px 0;
+        padding: 10px;
+        background-color: #444;
+        border-radius: 5px;
+        text-align: center;
+      }
+
+      .sidebar a:hover {
+        background-color: #555;
+      }
+
+      /* Main content area */
+      .main-content {
+        flex-grow: 1;
+        background-color: #f1f1f1;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .main-content .content-header {
+        background-color: grey;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+
+      .main-content .content-grid {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .main-content .card {
+        background-color: grey;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        flex: 1 1 calc(33.333% - 20px); /* Responsive 3-column grid */
+        min-width: 250px;
+      }
+
+      /* Footer */
+      .footer {
+        background-color: #4caf50;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        flex-shrink: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Dashboard Example with Flexbox</h1>
+    </div>
+
+    <div class="container">
+      <!-- Sidebar section -->
+      <nav class="sidebar">
+        <a href="#">Home</a>
+        <a href="#">Profile</a>
+        <a href="#">Settings</a>
+        <a href="#">Logout</a>
+      </nav>
+
+      <!-- Main content section -->
+      <div class="main-content">
+        <div class="content-header">
+          <h2>Welcome to your dashboard</h2>
+          <p>
+            This is the main content area where you can display various cards or
+            widgets.
+          </p>
+        </div>
+
+        <div class="content-grid">
+          <!-- Cards in grid format -->
+          <div class="card">
+            <h3>Card 1</h3>
+            <p>
+              Some content for card 1. This could be a graph, chart, or user
+              data.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Card 2</h3>
+            <p>
+              Some content for card 2. You can expand this section with more
+              details.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Card 3</h3>
+            <p>
+              Some content for card 3. These cards will adjust to fit the screen
+              size.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Card 4</h3>
+            <p>More card content for additional information.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2024 Dashboard. All rights reserved.</p>
+    </div>
+  </body>
+</html>
