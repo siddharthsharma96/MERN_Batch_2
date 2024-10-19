@@ -1,0 +1,25 @@
+.grid {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* gap: 20px; */
+  grid-column-gap: 20px;
+  grid-row-gap: 50px;
+}
+.item:nth-child(1) {
+  /* grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 4; */
+  /* grid-row: 1/4;
+  grid-column: 1/4; */
+  grid-area: 2/1/4/4;
+}
+.item {
+  padding: 200px;
+  background-color: #3ba0e4;
+  border: 1px solid black;
+  color: #275e84;
+  font-weight: 700;
+  font-size: 54px;
+}
