@@ -1,0 +1,104 @@
+* {
+  /* color: blue; */
+}
+
+p {
+  padding: 20px;
+  padding: 10px 20px 40px 50px;
+  padding: 40px 80px;
+  margin: 30px;
+  font-weight: 700;
+  /* display: inline; */
+}
+
+#unique {
+  font-size: 23px;
+}
+
+.btn {
+  color: red;
+  font-family: "Courier New", Courier, monospace\;;
+}
+
+button[type="submit"] {
+  padding: 34px;
+  border: 20px double black;
+  font-weight: 700;
+}
+
+li:nth-child(3) {
+  color: red;
+  font-size: 34px;
+}
+li:first-child {
+  color: grey;
+}
+
+p::before {
+  content: "Codehub Nexus";
+}
+
+.btn::after {
+  content: "Hi everyone ";
+}
+
+.btn::first-letter {
+  color: blue;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.container {
+  height: 80vh;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  width: 50%;
+}
+.static {
+  position: static;
+}
+
+.sticky {
+  position: sticky;
+  top: 10px;
+  background-color: red;
+}
+
+.fixed {
+  position: fixed;
+  /* bottom: 30px; */
+  width: 20%;
+  right: 10px;
+  display: inline;
+  background-color: red;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  display: inline;
+  background-color: yellowgreen;
+  top: 30px;
+  right: -20px;
+}
+
+.flex {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 10px; */
+  height: 900px;
+  justify-content: center;
+  align-items: center;
+}
+.flex > div {
+  background-color: yellow;
+  font-weight: 700;
+  font-size: 34px;
+  padding: 40px;
+  height: 100px;
+  width: 20%;
+}
