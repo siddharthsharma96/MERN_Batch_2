@@ -6,7 +6,7 @@ const Counter = () => {
 
   // Syntax of useState
   // [variable,function]=useState(Default Value)
-  let [val, setVal] = useState(0);
+  let [val, setVal] = useState(10);
 
   // Syntax of UseEffect
   // useEffect(callback Function,[array of dependencies])

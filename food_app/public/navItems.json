@@ -1,0 +1,18 @@
+[
+  {
+    "path": "/",
+    "content": "Home"
+  },
+  {
+    "path": "/help",
+    "content": "Help"
+  },
+  {
+    "path": "/search",
+    "content": "Search"
+  },
+  {
+    "path": "/cart",
+    "content": "Cart"
+  }
+]
